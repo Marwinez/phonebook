@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build:ui": "rmdir dist /s && mkdir dist && cd D:\\Wszystko\\Projekty\\FullStackOpenCourse\\part2\\phonebook && npm run build && xcopy dist D:\\Wszystko\\Projekty\\Phonebook\\dist /E/H"
   },
   "author": "Martin Szum",
   "license": "MIT",
