@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rmdir dist /s && mkdir dist && cd D:\\Wszystko\\Projekty\\FullStackOpenCourse\\part2\\phonebook && npm run build && xcopy dist D:\\Wszystko\\Projekty\\Phonebook\\dist /E/H"
+    "build:ui": "rmdir dist /s && mkdir dist && cd D:\\Wszystko\\Projekty\\FullStackOpenCourse\\part2\\phonebook && npm run build && xcopy dist D:\\Wszystko\\Projekty\\Phonebook\\dist /E/H",
+    "lint": "eslint ."
   },
   "author": "Martin Szum",
   "license": "MIT",
@@ -19,6 +20,10 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@stylistic/eslint-plugin-js": "^2.8.0",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
     "nodemon": "^3.1.4"
   }
 }
